@@ -1,0 +1,666 @@
+/* /* manrope-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "man";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/manrope-v15-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "man500";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/manrope-v15-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* manrope-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "man700";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/manrope-v15-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+  background-color: #fff;
+}
+
+:root {
+  --primary: #d87d4a;
+  --l_black: #101010;
+  --gray: #f1f1f1;
+  --l_white: #fafafa;
+  --l_primary: #fbaf85;
+  --white: #ffffff;
+  --black: #000000;
+}
+header {
+  background-color: #131313;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0px auto;
+  background-color: #131313;
+}
+.menu {
+  font-family: "man500";
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#nav ul li a {
+  font-family: "man700";
+  font-size: 13px;
+  color: var(--white);
+}
+
+.navbar {
+  border-bottom: 2px solid #ffffff48;
+}
+
+header .card {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+header .card .left {
+  width: 398px;
+}
+header .card p {
+  font-family: "man";
+}
+header .card p:nth-child(1) {
+  font-family: "man";
+  font-size: 14px;
+  letter-spacing: 10px;
+}
+
+.header_links {
+  color: var(--white);
+}
+
+.header_links {
+  color: var(--white);
+  transition: all 0.6s ease-in-out;
+}
+
+.header_links a:hover {
+  cursor: pointer;
+  background-color: #d87d4a;
+}
+
+header .card h1 {
+  margin-top: 24px;
+  font-size: 56px;
+  line-height: 58px;
+  color: #fff;
+  font-family: "man";
+}
+header .card .left p {
+  margin-top: 24px;
+  font-family: "man";
+  line-height: 25px;
+  font-size: 15px;
+  width: 339px;
+}
+
+header .card .left button {
+  transition: all 0.7s ease-in-out;
+}
+header .card .left button {
+  margin-top: 40px;
+  transition: all 0.6s ease-in-out;
+}
+
+main {
+  background: white;
+}
+
+.main_container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.wrapper_audio-card {
+  display: flex;
+  align-items: self-end;
+  justify-content: space-between;
+  padding-top: 120px;
+}
+
+.imgs {
+  width: 350px;
+}
+
+.imgs img {
+  margin: 0 auto;
+}
+
+.img_title {
+  text-align: center;
+  font-size: 18px;
+  color: var(--black);
+  font-family: "man700";
+  background-image: url();
+}
+
+.img_page {
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: gray;
+  letter-spacing: 1px;
+  font-family: "man700";
+}
+
+.img_page span {
+  color: #d87d4a;
+  font-size: 18px;
+}
+
+.bagr {
+  width: 350px;
+  height: 204px;
+  background-color: #f1f1f1;
+  margin-top: -188px;
+  border-radius: 12px;
+}
+
+.card_primary {
+  width: 1110px;
+  height: 560px;
+  display: flex;
+  padding-top: 96px;
+  justify-content: space-around;
+  margin-top: 168px;
+  background-image: url(./medias/bg_primary.png);
+}
+
+.right_title {
+  font-family: "man700";
+  font-size: 56px;
+  line-height: 58px;
+  padding-top: 32px;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+
+.right_page {
+  font-family: "man";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--white);
+  opacity: 75%;
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.right_button {
+  width: 160px;
+  height: 48px;
+  background-color: var(--black);
+  color: var(--white);
+  transition: all 0.8s ease-in-out;
+  text-transform: uppercase;
+}
+
+.right_button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.card_gray {
+  height: 320px;
+  margin-top: 48px;
+  padding-top: 120px;
+  padding-left: 100px;
+  background-image: url(./medias/Bitmap\ \(5\).png);
+}
+
+.gray_card_title {
+  font-family: "man700";
+  font-size: 28px;
+  color: var(--black);
+  line-height: 38.25px;
+  letter-spacing: 2px;
+}
+
+.gray_card_btn {
+  width: 160px;
+  height: 48px;
+  margin-top: 32px;
+  border: 2px solid black;
+  color: var(--black);
+  text-transform: uppercase;
+  transition: all 0.8s ease-in-out;
+}
+
+.gray_card_btn:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.gray__img {
+  margin-top: -200px;
+}
+
+.card_airpods {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.card_earphones {
+  width: 540px;
+  height: 320px;
+  background-color: #f1f1f1;
+  padding-left: 95px;
+}
+
+.earphones_title {
+  font-family: "man700";
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: var(--black);
+  padding-top: 100px;
+}
+
+.earphones_btn {
+  width: 160px;
+  height: 48px;
+  margin-top: 32px;
+  border: 2px solid black;
+  color: var(--black);
+  text-transform: uppercase;
+  transition: all 0.8s ease-in-out;
+}
+
+.earphones_btn:hover {
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.wrapper_main_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+
+.mn_title {
+  font-family: "man700";
+  font-size: 40px;
+  letter-spacing: 1.4285714626312256px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.mn_title span {
+  color: #d87d4a;
+}
+
+.mn_page {
+  font-family: "man";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--black);
+  opacity: 50%;
+  margin-top: 32px;
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--black);
+}
+
+.footer_container {
+  width: 1110px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+}
+
+.wrapper_footer_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 75px;
+}
+
+.footer_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  gap: 34px;
+  color: var(--white);
+}
+.footer_links a:hover {
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #d87d4a;
+}
+
+.wrapper_social_media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 36px;
+}
+
+.footer_page {
+  font-family: "man";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--white);
+  opacity: 50%;
+}
+
+.social_media {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 56px;
+}
+
+.social_media a:hover {
+  color: #d87d4a;
+}
+
+.footer_link_end {
+  font-family: "man700";
+  font-size: 15px;
+  color: var(--white);
+  opacity: 50%;
+}
+
+.footer_link_end:hover {
+  cursor: pointer;
+  color: #d87d4a;
+}
+
+.footer_end {
+  margin-top: 56px;
+}
+
+/* part HEADPHONES */
+
+.header_title {
+  font-family: "man700";
+  font-size: 40px;
+  letter-spacing: 1.4285714626312256px;
+  text-align: center;
+  margin-top: 135px;
+  color: var(--white);
+  padding-bottom: 97px;
+}
+
+.headphones_main_tit {
+  font-family: "man";
+  font-size: 14px;
+  line-height: 19.12px;
+  letter-spacing: 10px;
+  color: var(--primary);
+}
+
+.headphones_main_title {
+  font-family: "man700";
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 1.4285714626312256px;
+  color: var(--black);
+  margin-top: 16px;
+}
+
+.headphones_main_page {
+  font-family: "man";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--black);
+  opacity: 50%;
+  margin-top: 32px;
+}
+
+.headphones_main_btn {
+  margin-top: 32px;
+}
+
+.wrapper_main_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 160px;
+}
+
+.headphones {
+  margin-top: 160px;
+}
+
+.speaker_main_img {
+  width: 540;
+  height: 560px;
+}
+
+/* product card*/
+
+.link_back {
+  font-family: "man";
+  font-size: 15px;
+  text-align: left;
+  color: var(--black);
+  opacity: 50%;
+  position: absolute;
+  top: 150px;
+}
+
+.link_back:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.cost {
+  font-family: "man700";
+  font-size: 18px;
+  letter-spacing: 1.2857142686843872px;
+  color: var(--black);
+  padding-top: 32px;
+}
+
+.btns_add {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 48px;
+  color: var(--white);
+  background-color: var(--primary);
+  transition: all 0.8s ease-in-out;
+}
+
+.btns_add:hover {
+  cursor: pointer;
+  color: var(--primary);
+  background-color: var(--white);
+  border: 2px solid var(--primary);
+}
+
+.wrapper_add_btn {
+  display: flex;
+  align-items: last baseline;
+  margin-left: -160px;
+}
+
+.row {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.number {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  color: #000;
+}
+
+.number input[type="number"] {
+  display: block;
+  height: 45px;
+  line-height: 32px;
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+  outline: none;
+}
+
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.number-minus {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  width: 20px;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  color: #bca7a7;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.number-plus {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: 20px;
+  color: #bca7a7;
+  padding: 0;
+  display: block;
+  text-align: center;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wrapper_title_cards {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.product_title {
+  font-family: "man700";
+  font-size: 32px;
+  letter-spacing: 1.1428571939468384px;
+  color: var(--black);
+}
+
+.product_pages {
+  font-family: "man";
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--black);
+  opacity: 50%;
+  margin-top: 32px;
+}
+
+.right_card_title {
+  font-family: "man700";
+  font-size: 32px;
+  letter-spacing: 1.1428571939468384px;
+  color: var(--black);
+  text-transform: uppercase;
+}
+
+.box_card {
+  font-family: "man";
+  font-size: 15px;
+  line-height: 8px;
+  color: var(--black);
+  opacity: 50%;
+  padding-top: 32px;
+}
+
+.box_card span {
+  color: var(--primary);
+  margin-right: 24px;
+}
+
+.wrapper_main_imgs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.img_phone {
+  margin-top: 32px;
+}
+
+.main_titles {
+  font-family: "man700";
+  font-size: 32px;
+  letter-spacing: 1.1428571939468384px;
+  text-align: center;
+  color: var(--black);
+  margin-top: 160px;
+  text-transform: uppercase;
+}
+
+.wrapper_main_airpods{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.airpods_title{
+    font-family:'man700';
+    font-size: 24px;
+    letter-spacing: 1.7142857313156128px;
+    color: var(--black);
+    margin-top: 40px;
+    margin-left: 94px;
+}
+
+.airpods_btn{
+    width: 160px;
+    height: 48px;
+    color: var(--white);
+    background-color:var(--primary);
+    margin-left: 94px;
+    margin-top: 32px;
+    transition: all 0.8s ease-in-out;
+}
+
+.airpods_btn:hover{
+    cursor: pointer;
+    color: var(--primary);
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+}

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/img/favicon-32x32.png" />
+    <title>audiophile</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar pl-6 pr-6">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                id
+                tabindex="0"
+                class="menu menu-lg dropdown-content mt-3 z-[1] shadow rounded-box w-54 bg-black"
+              >
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">HEADPHONES</a></li>
+                <li><a href="#">SPEAKERS</a></li>
+                <li><a href="#">EARPHONES</a></li>
+              </ul>
+            </div>
+            <a href="index.html" class="cursor-pointer"
+              ><img src="./medias/audiophile.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="navbar-center hidden lg:flex" id="nav">
+            <ul class="menu menu-horizontal px-1 header_links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="headphones.html">HEADPHONES</a></li>
+              <li><a href="speaker.html">SPEAKERS</a></li>
+              <li><a href="earphones.html">EARPHONES</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a id="cart" class="cursor-pointer"
+              ><img src="./medias/Combined Shape.svg" alt="logo: shopping"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main_container">
+        <a class="link_back" href="index.html">Go Back</a>
+        <div class="wrapper_main_card">
+          <img src="./medias/Group 3.png" alt="photo" />
+          <div class="card">
+            <div class="left">
+              <h2 class="headphones_main_tit">NEW PRODUCT</h2>
+              <h1 class="headphones_main_title">
+                XX99 Mark II <br />
+                Headphones
+              </h1>
+              <p class="headphones_main_page">
+                The new XX99 Mark II headphones is the pinnacle of pristine
+                <br />
+                audio. It redefines your premium headphone experience by <br />
+                reproducing the balanced depth and precision of studio-quality
+                <br />
+                sound.
+              </p>
+              <p class="cost">$ 2,999</p>
+              <div class="wrapper_add_btn">
+                <div class="row">
+                  <div class="number">
+                    <button
+                      class="number-minus"
+                      type="button"
+                      onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"
+                    >
+                      -
+                    </button>
+                    <input type="number" min="0" value="1" readonly />
+                    <button
+                      class="number-plus"
+                      type="button"
+                      onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div class="btns_add">
+                  <button class="btn_add">ADD TO CART</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper_title_cards">
+          <div class="wrapper_text_card">
+            <h1 class="product_title">FEATURES</h1>
+            <p class="product_pages">
+              Featuring a genuine leather head strap and premium earcups, these
+              headphones deliver <br />
+              superior comfort for those who like to enjoy endless listening. It
+              includes intuitive controls <br />
+              designed for any situation. Whether you’re taking a business call
+              or just in your own <br />
+              personal space, the auto on/off and pause features ensure that
+              you’ll never miss a beat. <br />
+              <br />
+              The advanced Active Noise Cancellation with built-in equalizer
+              allow you to experience <br />
+              your audio world on your terms. It lets you enjoy your audio in
+              peace, but quickly interact <br />
+              with your surroundings when you need to. Combined with Bluetooth
+              5. 0 compliant <br />
+              connectivity and 17 hour battery life, the XX99 Mark II headphones
+              gives you superior <br />
+              sound, cutting-edge technology, and a modern design aesthetic.
+            </p>
+          </div>
+          <div class="wrapper_right_card">
+            <h1 class="right_card_title">in the box</h1>
+            <p class="box_card"><span>1x</span>Headphone Unit</p>
+            <p class="box_card"><span>2x</span>Replacement Earcups</p>
+            <p class="box_card"><span>1x</span>User Manual</p>
+            <p class="box_card"><span>1x</span>3.5mm 5m Audio Cable</p>
+            <p class="box_card"><span>1x</span>Travel Bag</p>
+          </div>
+        </div>
+        <div class="wrapper_main_imgs">
+          <div class="wrapper_imgs">
+            <img src="./medias/Bitmap (7).png" alt="photo" />
+            <img class="img_phone" src="./medias/Bitmap (8).png" alt="photo" />
+          </div>
+          <div class="img_airpod">
+            <img src="./medias/Bitmap (9).png" alt="photo" />
+          </div>
+        </div>
+        <h1 class="main_titles">you may also like</h1>
+        <div class="wrapper_main_airpods">
+        <div class="wrapper_airpods">
+          <img src="./medias/Group 12 (1).png" alt="photo" />
+          <h1 class="airpods_title">XX99 MARK I</h1>
+          <button class="airpods_btn">See Product</button>
+        </div>
+        <div class="wrapper_airpods">
+            <img src="./medias/Group 12 (2).png" alt="photo" />
+            <h1 class="airpods_title">XX59</h1>
+            <button class="airpods_btn">See Product</button>
+          </div>
+
+          <div class="wrapper_airpods">
+            <img src="./medias/Group 12 (3).png" alt="photo" />
+            <h1 class="airpods_title">ZX9 SPEAKER</h1>
+            <button class="airpods_btn">See Product</button>
+          </div>
+        </div>
+        <div class="wrapper_audio-card">
+            <div class="imgs">
+              <img src="./medias/image-removebg-preview(41).png" alt="photo" />
+              <img
+                src="./medias/Oval Copy 3.svg"
+                alt="shadow"
+                style="margin-top: -44px"
+              />
+              <h2 class="img_title">HEADPHONES</h2>
+              <a href="shop">
+                <p class="img_page">Shop <span>></span></p>
+              </a>
+              <div class="bagr"></div>
+            </div>
+            <div class="imgs">
+              <img src="./medias/image-removebg-preview(38).png" alt="photo" />
+              <img
+                src="./medias/Oval Copy 3.svg"
+                alt="shadow"
+                style="margin-top: -44px"
+              />
+              <h2 class="img_title">SPEAKERS</h2>
+              <a href="shop">
+                <p class="img_page">Shop <span>></span></p>
+              </a>
+              <div class="bagr"></div>
+            </div>
+            <div class="imgs">
+              <img src="./medias/Group 5.png" alt="photo" />
+              <img
+                src="./medias/Oval Copy 3.svg"
+                alt="shadow"
+                style="margin-top: -44px"
+              />
+              <h2 class="img_title">EARPHONES</h2>
+              <a href="shop">
+                <p class="img_page">Shop <span>></span></p>
+              </a>
+              <div class="bagr"></div>
+            </div>
+          </div>
+
+          <div class="flex card_airpods">
+
+          </div>
+          <div class="wrapper_main_title titles">
+            <div class="main_title">
+              <h1 class="mn_title">
+                Bringing you the <br />
+                <span>best</span> audio gear
+              </h1>
+              <p class="mn_page">
+                Located at the heart of New York City, Audiophile is the premier
+                <br />
+                store for high end headphones, earphones, speakers, and audio
+                <br />
+                accessories. We have a large showroom and luxury <br />
+                demonstration rooms available for you to browse and <br />
+                experience a wide range of our products. Stop by our store to
+                <br />
+                meet some of the fantastic people who make Audiophile the <br />
+                best place to buy your portable audio equipment.
+              </p>
+            </div>
+            <div class="main_img ">
+              <img src="./medias/Bitmap (6).png" alt="photo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="headphones">
+      <div class="footer_container">
+        <div class="wrapper_footer_links">
+          <div class="logos">
+            <a href="index.html" class="cursor-pointer"
+              ><img src="./medias/audiophile.svg" alt="logo"
+            /></a>
+          </div>
+          <div class="footer_link">
+            <ul id tabindex="0" class="footer_links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="headphones.html">HEADPHONES</a></li>
+              <li><a href="speaker.html">SPEAKERS</a></li>
+              <li><a href="earphones.html">EARPHONES</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper_social_media">
+          <div class="footer_pages">
+            <p class="footer_page">
+              Audiophile is an all in one stop to fulfill your audio needs.
+              We're a small team <br />
+              of music lovers and sound specialists who are devoted to helping
+              you get the <br />
+              most out of personal audio. Come and visit our demo facility -
+              we’re open 7 <br />
+              days a week.
+            </p>
+          </div>
+          <div class="social_media">
+            <a href="https://www.facebook.com/?locale=ru_RU"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://x.com/i/flow/login"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer_end">
+          <a class="footer_link_end" href="Copyright 2021. All Rights Reserved"
+            >Copyright 2021. All Rights Reserved</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
