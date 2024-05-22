@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
+    <!-- <header>
       <div class="container">
         <div class="navbar pl-6 pr-6">
           <div class="navbar-start">
@@ -61,9 +61,217 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <a id="cart" class="cursor-pointer"
+            <a href="" id="cart" class="cursor-pointer"
               ><img src="./medias/Combined Shape.svg" alt="logo: shopping"
             /></a>
+
+
+            <div class="car5" id="car5">
+              <div class="left flex justify-between p-4">
+                  <p>cart (3)</p>
+                  <span class="remove" id="remove">Remove all</span>
+              </div>
+              <div class="top p-4">
+                  <div class="top">
+                      <div class="card1 flex gap-10 items-center  justify-between mt-4">
+                      <img src="public/img/Group 22.png" alt="img">
+                      <div class="block flex-col gap-2">
+                          <p>XX99 MK II</p>
+                          <p>$ 2,999</p>
+                      </div>
+                      <div class="number">
+                          <button class="number-minus" type="button"
+                              onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                          <input type="number" min="0" value="1" readonly>
+                          <button class="number-plus" type="button"
+                              onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                      </div>
+                      </div>
+                      <div class="card1 flex gap-10 items-center  justify-between mt-4">
+                          <img src="public/img/Group 22.png" alt="img">
+                          <div class="block flex flex-col gap-2">
+                              <p>XX99 MK II</p>
+                              <p>$ 2,999</p>
+                          </div>
+                          <div class="number">
+                              <button class="number-minus" type="button"
+                                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                              <input type="number" min="0" value="1" readonly>
+                              <button class="number-plus" type="button"
+                                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                          </div>
+                      </div>
+                      <div class="card1 flex gap-10 items-center  justify-between mt-4">
+                          <img src="public/img/Group 22.png" alt="img">
+                          <div class="block flex flex-col gap-2">
+                              <p>XX99 MK II</p>
+                              <p>$ 2,999</p>
+                          </div>
+                          <div class="number">
+                              <button class="number-minus" type="button"
+                                  onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                              <input type="number" min="0" value="1" readonly>
+                              <button class="number-plus" type="button"
+                                  onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="center flex justify-between items-center mt-8">
+                      <p>TOTAL</p>
+                      <p>$ 5,396</p>
+                  </div>
+                  <div class="bottom">
+                      <a href="#"><button class=" bg-orange-400 text-amber-50 pt-3 pb-3 pl-6 pr-6 hover:bg-orange-300">See
+                              Product</button>
+                      </a>
+                      
+                      <div class="overlay hidden" id="overlay"></div>
+                    </div>
+                </div>
+            </div>
+            
+      
+
+
+
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="left">
+            <p>NEW PRODUCT</p>
+            <h1>XX99 Mark II Headphones</h1>
+            <p>
+              Experience natural, lifelike audio and exceptional build quality
+              made for the passionate music enthusiast.
+            </p>
+            <button
+              class="bg-orange-400 text-amber-50 pt-3 pb-3 pl-6 pr-6 hover:bg-white hover:text-black index_btn"
+            >
+              SEE PRODUCT
+            </button>
+          </div>
+          <div class="right">
+            <img width="708.8px" src="./medias/Bitmap (3).png" alt="foto" />
+          </div>
+        </div>
+      </div>
+    </header> -->
+
+
+  </head>
+  <body id="body">
+    <header>
+      <div class="container">
+        <div class="navbar pl-6 pr-6">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                id="dropdown-menu"
+                tabindex="0"
+                class="menu menu-lg dropdown-content mt-3 z-[1] shadow rounded-box w-54 bg-black"
+              >
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="headphones.html">HEADPHONES</a></li>
+                <li><a href="speaker.html">SPEAKERS</a></li>
+                <li><a href="earphones.html">EARPHONES</a></li>
+              </ul>
+            </div>
+            <a href="index.html" class="cursor-pointer">
+              <img src="./medias/audiophile.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex" id="nav">
+            <ul class="menu menu-horizontal px-1 header_links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="headphones.html">HEADPHONES</a></li>
+              <li><a href="speaker.html">SPEAKERS</a></li>
+              <li><a href="earphones.html">EARPHONES</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a href="javascript:void(0)" id="cart" class="cursor-pointer">
+              <img src="./medias/Combined Shape.svg" alt="logo: shopping" />
+            </a>
+            <div class="product" id="product">
+              <div class="left flex justify-between p-4">
+                <p class="text-blue-600 font-bold">cart (3)</p>
+                <span class="remove text-red-600" id="remove">Remove all</span>
+              </div>
+              <div class="top p-4">
+                <div class="card1 flex mt-4  justify-between gap-10 items-center">
+                  <img src="./medias/Group 22 (2).png" alt="photo">
+                  <div class=" flex  gap-4 flex-col">
+                    <p class="text-black font-bold">XX99MKII</p>
+                    <p class="text-yellow-400">$ 2,999</p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button"
+                      onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button"
+                      onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                </div>
+                <div class="card1 flex mt-4  justify-between gap-10 items-center">
+                  <img src="./medias/Group 22 (3).png" alt="photo">
+                  <div class="flex gap-4 flex-col ">
+                    <p class="text-black font-bold">XX59</p>
+                    <p class="text-yellow-400">$899</p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button"
+                      onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button"
+                      onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                </div>
+                <div class="card1 flex mt-4  justify-between gap-10 items-center ">
+                  <img src="./medias/Group 22 (4).png" alt="photo">
+                  <div class="flex gap-4 flex-col">
+                    <p class="text-black font-bold">YX1</p>
+                    <p class="text-yellow-400">$ 599</p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button"
+                      onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button"
+                      onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class=" flex justify-around items-center mt-8">
+                <p class="text-black font-bold">TOTAL</p>
+                <p class="text-yellow-400 -right-60 font-bold">$ 3,500</p>
+              </div>
+              <div class="bottom">
+                <a href="#">
+                  <button class="bg-orange-400 text-amber-50 pt-3 uppercase border border-solid hover:border-orange-400 pb-3 pl-6 pr-6 hover:bg-white hover:text-orange-400">
+                    See Product
+                  </button>
+                </a>
+                <div class="overlay hidden" id="overlay"></div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card">
@@ -200,26 +408,41 @@
           </div>
         </div>
         <div class="wrapper_social_media">
-        <div class="footer_pages">
-        <p class="footer_page">
-          Audiophile is an all in one stop to fulfill your audio needs. We're a
-          small team <br> of music lovers and sound specialists who are devoted to
-          helping you get the <br> most out of personal audio. Come and visit our
-          demo facility - we’re open 7 <br> days a week.
-        </p>
-        </div>
-        <div class="social_media">
-        <a href="https://www.facebook.com/?locale=ru_RU"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://x.com/i/flow/login"><i class="fa-brands fa-square-twitter"></i></a>
-        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+          <div class="footer_pages">
+            <p class="footer_page">
+              Audiophile is an all in one stop to fulfill your audio needs.
+              We're a small team <br />
+              of music lovers and sound specialists who are devoted to helping
+              you get the <br />
+              most out of personal audio. Come and visit our demo facility -
+              we’re open 7 <br />
+              days a week.
+            </p>
+          </div>
+          <div class="social_media">
+            <a href="https://www.facebook.com/?locale=ru_RU"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://x.com/i/flow/login"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
         </div>
         <div class="footer_end">
-        <a  class="footer_link_end" href="Copyright 2021. All Rights Reserved">Copyright 2021. All Rights Reserved</a>
-        </div>  
-    </div>
+          <a class="footer_link_end" href="Copyright 2021. All Rights Reserved"
+            >Copyright 2021. All Rights Reserved</a
+          >
+        </div>
+      </div>
     </footer>
 
     <script src="./app.js"></script>
   </body>
 </html>
+
+
+
+
