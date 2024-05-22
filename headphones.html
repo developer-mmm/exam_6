@@ -64,6 +64,69 @@
             <a id="cart" class="cursor-pointer"
               ><img src="./medias/Combined Shape.svg" alt="logo: shopping"
             /></a>
+            
+            <div class="product" id="product">
+              <div class="left flex justify-between p-4">
+                <p class="text-black font-bold">Cart (3)</p>
+                <span class="remove text-white" id="remove">Remove all</span>
+              </div>
+              <div class="top p-4">
+                <div class="card1 flex mt-4  justify-between gap-10 items-center">
+                  <img src="./medias/Group 22 (2).png" alt="photo">
+                  <div class=" flex  gap-4 flex-col">
+                    <p class="text-black font-bold">XX99MKII</p>
+                    <p class="text-yellow-400">$ 2,999</p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button"
+                      onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button"
+                      onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                </div>
+                <div class="card1 flex mt-4  justify-between gap-10 items-center">
+                  <img src="./medias/Group 22 (3).png" alt="photo">
+                  <div class="flex gap-4 flex-col ">
+                    <p class="text-black font-bold">XX59</p>
+                    <p class="text-yellow-400">$899</p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button"
+                      onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button"
+                      onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                </div>
+                <div class="card1 flex mt-4  justify-between gap-10 items-center ">
+                  <img src="./medias/Group 22 (4).png" alt="photo">
+                  <div class="flex gap-4 flex-col">
+                    <p class="text-black font-bold">YX1</p>
+                    <p class="text-yellow-400">$ 599</p>
+                  </div>
+                  <div class="number">
+                    <button class="number-minus" type="button"
+                      onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                    <input type="number" min="0" value="1" readonly>
+                    <button class="number-plus" type="button"
+                      onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                  </div>
+                </div>
+              </div>
+              <div class=" flex justify-around items-center mt-8">
+                <p class="text-black font-bold">TOTAL</p>
+                <p class="text-yellow-400 -right-60 font-bold">$ 3,500</p>
+              </div>
+              <div class="bottom">
+                <a href="./checkout.html">
+                  <button class="bg-orange-400 text-amber-50 pt-3 uppercase border border-solid hover:border-orange-400 pb-3 pl-6 pr-6 hover:bg-white hover:text-orange-400">
+                    See Product
+                  </button>
+                </a>
+                <div class="overlay hidden" id="overlay"></div>
+              </div>
+            </div>
           </div>
         </div>
         <h1 class="header_title">HEADPHONES</h1>
@@ -136,7 +199,7 @@
                     style="margin-top: -44px"
                   />
                   <h2 class="img_title">HEADPHONES</h2>
-                  <a href="shop">
+                  <a href="headphones.html">
                     <p class="img_page">Shop <span>></span></p>
                   </a>
                   <div class="bagr"></div>
@@ -149,7 +212,7 @@
                     style="margin-top: -44px"
                   />
                   <h2 class="img_title">SPEAKERS</h2>
-                  <a href="shop">
+                  <a href="speaker.html">
                     <p class="img_page">Shop <span>></span></p>
                   </a>
                   <div class="bagr"></div>
@@ -162,7 +225,7 @@
                     style="margin-top: -44px"
                   />
                   <h2 class="img_title">EARPHONES</h2>
-                  <a href="shop">
+                  <a href="earphones.html">
                     <p class="img_page">Shop <span>></span></p>
                   </a>
                   <div class="bagr"></div>
