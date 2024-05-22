@@ -297,6 +297,7 @@ main {
   align-items: center;
   justify-content: space-between;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .mn_title {
@@ -355,7 +356,7 @@ footer {
 
 .wrapper_social_media {
   display: flex;
-  align-items: center;
+  align-items: last baseline;
   justify-content: space-between;
   padding-top: 36px;
 }
@@ -746,3 +747,7 @@ footer {
 .product{
   background-color: green;
 }
+
+/* .index_footer{
+  margin-top: 200px;
+} */
